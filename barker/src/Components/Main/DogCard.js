@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class DogCard extends Component {
+class DogCard extends Component {
 
     render() {
         return (
@@ -11,3 +11,5 @@ export default class DogCard extends Component {
     }
 
 }
+
+export default DogCard;
