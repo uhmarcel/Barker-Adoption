@@ -7,26 +7,32 @@ class Matches extends Component {
     state = {
         imageUrl: "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         name: "Scooby",
-        age: 6,
-        shortBio: "Marketing Design at Tinder"
+        lastMessage : "Woof Woof bark bark"
     }
 
     render() {
         const { imageUrl, name, age, shortBio } = this.state; 
         return (
-            <div>
-
+            <div className = "py-3">
+                
                 <Row>
                     <Col> 
                         <img src={imageUrl} className="rounded-circle" height="80" width="80"/>  
                     </Col>
 
                     <Col>
-                        <span>{name}, {age}</span>  
-                        <span>{shortBio}</span>
+                        
+                        <div className = "py-1 bold">
+                        <span> <b> {this.state.name} </b> </span> 
+                        </div> 
+
+                        <div className = "py-2lead">
+                        <span>{this.state.lastMessage}</span> 
+                        </div> 
                     </Col>
                 </Row>  
-              
+                <hr/>
+
             </div>
         );
     }

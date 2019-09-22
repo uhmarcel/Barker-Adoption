@@ -8,6 +8,10 @@ function App() {
   return (
     <div className="App">
         <DogCard/>
+
+        <Matches/>
+        <Matches/>
+        <Matches/>
         <Matches/>
     </div>
   );
