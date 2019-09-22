@@ -2,6 +2,7 @@ import React, { Component, Ref} from 'react';
 import MainView from './Components/Main/MainView';
 import ChatView from './Components/Chat/ChatView';
 import './App.css';
+import DogNav from './Components/Chat/DogNav';
 
 
 export default class App extends Component {
