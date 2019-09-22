@@ -1,5 +1,6 @@
 import React from 'react';
 import DogCard from './Components/Main/DogCard';
+import Chat from './Components/Main/Chat';
 import Matches from './Components/Main/Matches';
 import './App.css';
 import NavBar from './Components/Main/NavBar';
@@ -13,6 +14,7 @@ function App() {
         <DogCard />
         <ControlPanel />
         <Matches/>
+        <Chat/>
     </div>
   );
 }
