@@ -21,6 +21,7 @@ export default class App extends Component {
           <hr/>
           <ChatView />
           <DogNav />
+          <Chat/>
       </div>
     );
   }
