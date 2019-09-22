@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class DogCard extends Component {
+export default class DogCard extends Component {
 
     state = {
         imageUrl: "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
@@ -10,15 +10,15 @@ class DogCard extends Component {
     }
 
     render() {
-        const { imageUrl, name, age, shortBio } = this.state; 
+        const { imageUrl, name, age, breed, location } = this.props.dogData;
         return (
             <div className='card'>
-                <div>
-                    <img src={imageUrl} style={{width: '100%'}}/>
+                <div className='justify-items-center' style={imgContainer}>
+                    <img src={imageUrl} style={imgStyles}/>
                 </div>
                 <div className='py-1 px-2'>
                     <p className='mb-0'><b>{name}, {age}</b></p>  
-                    <p className='small mb-1'>{shortBio}</p>
+                    <p className='small mb-1'>{breed + ', at ' + location}</p>
                 </div>
             </div>
         );
@@ -26,4 +26,14 @@ class DogCard extends Component {
 
 }
 
-export default DogCard;
+const imgContainer = {
+    height: '60vh',
+    maxWidth: '100vw',
+    overflow: 'hidden',
+    textAlign: 'center'
+}
+
+const imgStyles = {
+    display: 'inline-block',
+    height: '100%'
+}
