@@ -1,6 +1,6 @@
 import React, { Component, Ref} from 'react';
-import MainView from './Components/Main/MainView';
-import ChatView from './Components/Chat/ChatView';
+import MainView from './Components/MainView';
+import ChatView from './Components/ChatView';
 import './App.css';
 import DogNav from './Components/Chat/DogNav';
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ChatNav from './ChatNav';
-import Chat from './Chat';
-import Matches from './Matches';
+import ChatNav from './Chat/ChatNav';
+import Chat from './Chat/Chat';
+import Matches from './Chat/Matches';
 
 export default class ChatView extends Component {
 

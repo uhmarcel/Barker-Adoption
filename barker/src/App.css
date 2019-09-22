@@ -17,6 +17,14 @@
   color: white;
 }
 
+.hoverable {
+  transition: all ease-in 0.1s;
+}
+
+.hoverable:hover {
+  color: #FF696E
+}
+
 .App-link {
   color: #09d3ac;
 }

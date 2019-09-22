@@ -13,13 +13,17 @@ export default class ChatNav extends Component {
                 <Row style={{fontSize: '2rem'}}>
                     <Col xs='3' style={leftIcon}>
                         <FontAwesomeIcon 
+                            className='hoverable'
                             icon={faPaw} 
                             onClick={() => moveTo('main')}
                         />
                     </Col>
                     
                     <Col xs='6' style={rightIcon}>
-                        <FontAwesomeIcon icon={faComments} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faComments} 
+                        />
                     </Col>
                     
                     <Col xs='3' style={rightIcon}>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar';
-import DogCard from './DogCard';
-import ControlPanel from './ControlPanel';
+import NavBar from './Main/NavBar';
+import DogCard from './Main/DogCard';
+import ControlPanel from './Main/ControlPanel';
 
 export default class MainView extends Component {
 
