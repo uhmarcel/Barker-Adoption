@@ -7,9 +7,10 @@ import ChatControlPanel from './ChatControlPanel';
 export default class MainView extends Component {
 
     render() {
+        const { moveTo } = this.props;
         return (
             <div>
-                <NavBar />
+                <NavBar moveTo={moveTo} />
                 <DogCard />
                 <ControlPanel />
                 <ChatControlPanel/>

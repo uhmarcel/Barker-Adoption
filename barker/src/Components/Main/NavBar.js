@@ -7,11 +7,15 @@ import logo from '../../Assets/logo.png';
 export default class NavBar extends Component {
 
     render() {
+        const { moveTo } = this.props;
         return (
             <Container className='pb-1'>
                 <Row style={{fontSize: '2rem'}}>
                     <Col xs='3' style={leftIcon}>
-                        <FontAwesomeIcon icon={faCog} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faCog} 
+                        />
                     </Col>
                     
                     <Col xs='6' style={logoStyle}>
@@ -19,7 +23,11 @@ export default class NavBar extends Component {
                     </Col>
                     
                     <Col xs='3' style={rightIcon}>
-                        <FontAwesomeIcon icon={faComments} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faComments} 
+                            onClick={() => moveTo('chat')}
+                        />
                     </Col>
                 </Row>
             </Container>

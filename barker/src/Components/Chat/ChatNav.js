@@ -7,15 +7,23 @@ import logo from '../../Assets/logo.png';
 export default class ChatNav extends Component {
 
     render() {
+        const { moveTo } = this.props;
         return (
             <Container className='pb-1'>
                 <Row style={{fontSize: '2rem'}}>
                     <Col xs='3' style={leftIcon}>
-                        <FontAwesomeIcon icon={faPaw} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faPaw} 
+                            onClick={() => moveTo('main')}
+                        />
                     </Col>
                     
                     <Col xs='6' style={rightIcon}>
-                    <FontAwesomeIcon icon={faComments} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faComments} 
+                        />
                     </Col>
                     
                     <Col xs='3' style={rightIcon}>
