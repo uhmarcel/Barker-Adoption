@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Container } from 'reactstrap';
 
 class DogCard extends Component {
 
@@ -15,11 +14,11 @@ class DogCard extends Component {
         return (
             <div className='card'>
                 <div>
-                    <img src={imageUrl} />
+                    <img src={imageUrl} style={{width: '100%'}}/>
                 </div>
-                <div>
-                    <p>{name}, {age}</p>  
-                    <p>{shortBio}</p>
+                <div className='py-1 px-2'>
+                    <p className='f mb-0'><b>{name}, {age}</b></p>  
+                    <p className='small mb-1'>{shortBio}</p>
                 </div>
             </div>
         );
@@ -28,39 +27,3 @@ class DogCard extends Component {
 }
 
 export default DogCard;
-
-const styles = {
-    container: {
-        height: '100%',
-        weight: '100%',
-        padding: '20px',
-        border: 'solid 1px black'
-    },
-    displayImage: {
-        height: '80%',
-    }
-}
-
-// import React from 'react';
-// import {
-//   Card, CardImg, CardText, CardBody,
-//   CardTitle, CardSubtitle, Button
-// } from 'reactstrap';
-
-// const Example = (props) => {
-//   return (
-//     <div>
-//       <Card>
-//         <CardImg top width="100%" src="/assets/318x180.svg" alt="Card image cap" />
-//         <CardBody>
-//           <CardTitle>Card title</CardTitle>
-//           <CardSubtitle>Card subtitle</CardSubtitle>
-//           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-//           <Button>Button</Button>
-//         </CardBody>
-//       </Card>
-//     </div>
-//   );
-// };
-
-// export default Example;
