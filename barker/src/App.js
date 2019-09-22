@@ -4,6 +4,7 @@ import Chat from './Components/Main/Chat';
 import Matches from './Components/Main/Matches';
 import './App.css';
 import NavBar from './Components/Main/NavBar';
+import ChatNav from './Components/Main/ChatNav';
 import ControlPanel from './Components/Main/ControlPanel';
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
         <NavBar />
         <DogCard />
         <ControlPanel />
+
+        <ChatNav/>
         <Matches/>
         <Chat/>
     </div>

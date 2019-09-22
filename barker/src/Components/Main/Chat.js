@@ -14,7 +14,7 @@ class Chat extends Component {
         return (
             <div className='card'>
                 <div>
-                    <h1>Live Video *</h1>
+                    <h1>Live Video</h1>
                     <img src={imageUrl} style={{width: '100%'}}/>
                 </div>
                 <div className='py-1 px-2'>
