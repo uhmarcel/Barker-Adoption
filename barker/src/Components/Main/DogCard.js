@@ -17,7 +17,7 @@ class DogCard extends Component {
                     <img src={imageUrl} style={{width: '100%'}}/>
                 </div>
                 <div className='py-1 px-2'>
-                    <p className='f mb-0'><b>{name}, {age}</b></p>  
+                    <p className='mb-0'><b>{name}, {age}</b></p>  
                     <p className='small mb-1'>{shortBio}</p>
                 </div>
             </div>
