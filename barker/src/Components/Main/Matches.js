@@ -18,9 +18,9 @@ class Matches extends Component {
 
                 <Row>
                     <Col> 
-                        <img src={imageUrl} />  
+                        <img src={imageUrl} className="rounded-circle" height="80" width="80"/>  
                     </Col>
-                    
+
                     <Col>
                         <span>{name}, {age}</span>  
                         <span>{shortBio}</span>
@@ -34,3 +34,4 @@ class Matches extends Component {
 }
 
 export default Matches;
+
