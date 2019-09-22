@@ -3,12 +3,13 @@ import MainView from './Components/MainView';
 import ChatView from './Components/ChatView';
 import './App.css';
 import DogNav from './Components/Chat/DogNav';
+import LoginView from './Components/LoginView';
 
 
 export default class App extends Component {
 
   state = {
-    currentView: 'main'
+    currentView: 'login'
   }
 
   moveTo = (view) => {
@@ -20,6 +21,7 @@ export default class App extends Component {
     return (
       <div style={styles}>
           {currentView === 'main' ? <MainView moveTo={this.moveTo} /> : null}
+          {currentView === 'login' ? <LoginView moveTo={this.moveTo} /> : null}
           {currentView === 'chat' ? <ChatView moveTo={this.moveTo} /> : null}
       </div>
     );
