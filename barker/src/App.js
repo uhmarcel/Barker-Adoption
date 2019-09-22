@@ -9,6 +9,7 @@ import ChatNav from './Components/Chat/ChatNav';
 import ControlPanel from './Components/Main/ControlPanel';
 import MainView from './Components/Main/MainView';
 import ChatView from './Components/Chat/ChatView';
+import DogNav from './Components/Chat/DogNav';
 
 
 export default class App extends Component {
@@ -19,6 +20,7 @@ export default class App extends Component {
           <MainView />
           <hr/>
           <ChatView />
+          <DogNav />
       </div>
     );
   }
