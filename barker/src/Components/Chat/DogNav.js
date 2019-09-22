@@ -11,7 +11,10 @@ export default class DogNav extends Component {
             <Container className='pb-1'>
                 <Row style={{fontSize: '2rem'}}>
                     <Col xs='3' style={leftIcon}>
-                        <FontAwesomeIcon icon={faComments} />
+                        <FontAwesomeIcon 
+                            className='hoverable'
+                            icon={faComments}
+                            onClick={() => this.props.moveTo('chat')} />
                     </Col>
                     
                     <Col xs='6' style={rightIcon}>

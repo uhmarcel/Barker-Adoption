@@ -21,7 +21,7 @@ export default class MainView extends Component {
     }
 
     render() {
-        const { moveTo } = this.props;
+        const { moveTo, dogID } = this.props;
         return (
             <div className='p-2'> 
                 <NavBar moveTo={moveTo} />
@@ -38,7 +38,10 @@ export default class MainView extends Component {
                 </ReactSwipe>
                 <ControlPanel 
                     decline={() => this.swipeNext()}
-                    accept={() => this.swipeNext()} 
+                    accept={() => {
+                        this.swipeNext();
+                        this.props.addMatch(dogID)
+                    }}
                     />
             </div>
         );

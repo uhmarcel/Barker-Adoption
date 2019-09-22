@@ -10,8 +10,12 @@ export default class ChatView extends Component {
         return(
             <div>
                 <ChatNav moveTo={moveTo} />
-                <Matches />
-                <Chat/>
+                {this.props.matches.map((e, key) => {
+                    return (
+                        <Matches key={(e*key)} dog={this.props.data.dogs[e]} moveTo={moveTo} />
+                    )
+                })}
+                {/* <Chat/> */}
             </div>
         );
     }

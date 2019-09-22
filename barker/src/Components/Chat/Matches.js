@@ -4,16 +4,10 @@ import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Con
 
 class Matches extends Component {
 
-    state = {
-        imageUrl: "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-        name: "Scooby",
-        lastMessage : "Woof Woof bark bark"
-    }
-
     render() {
-        const { imageUrl, name, age, shortBio } = this.state; 
+        const { imageUrl, name, age, shortBio, online } = this.props.dog; 
         return (
-            <div className = "py-3">
+            <div className = "py-3" onClick={() => this.props.moveTo('dog')}>
                 
                 <Row>
                     <Col> 
@@ -21,13 +15,12 @@ class Matches extends Component {
                     </Col>
 
                     <Col>
-                        
                         <div className = "py-1 bold">
-                        <span> <b> {this.state.name} </b> </span> 
+                        <span> <b> {name} </b> </span> 
                         </div> 
 
                         <div className = "py-2lead">
-                        <span>{this.state.lastMessage}</span> 
+                        <span>{online === true ? 'Online' : 'Offline'}</span> 
                         </div> 
                     </Col>
                 </Row>  
