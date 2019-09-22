@@ -4,10 +4,40 @@
         {
             "imageUrl": "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             "videoUrl": null,
-            "name": "Scooby",
-            "age": 6,
+            "name": "Walter",
+            "age": "2 years",
             "breed": "Irish setter",
             "location": "Miami FL"
+        },
+
+        {
+            "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP6zH5081rrUlYDP9rE3KL42QkqQulNYqMmNMWrcuJqc8Bgei_ug",
+            "videoUrl": null,
+            "name": "R2D2",
+            "age": "6 Months",
+            "breed": "Pug",
+            "location": "Sunrise FL"
+        },
+
+        {
+            "imageUrl": "https://i.ytimg.com/vi/_ddq0Vd7kSg/maxresdefault.jpg",
+            "videoUrl": null,
+            "name": "Charlie",
+            "age": "6 Months",
+            "breed": "Dachshund",
+            "location": "Sunrise FL"
+        },
+
+        {
+            "imageUrl": "http://www.socalsurfdogs.com/uploads/5/5/1/6/5516446/815185.jpg?880",
+            "videoUrl": null,
+            "name": "Kona",
+            "age": "3 Years",
+            "breed": "Pug",
+            "location": "Sunrise FL"
         }
+
+
+
     ]
 }
