@@ -15,7 +15,7 @@ export default class DogNav extends Component {
                     </Col>
                     
                     <Col xs='6' style={rightIcon}>
-                    <FontAwesomeIcon icon={faStoreAlt} />
+                        <FontAwesomeIcon icon={faStoreAlt} />
                     </Col>
                     
                     <Col xs='3' style={rightIcon}>
