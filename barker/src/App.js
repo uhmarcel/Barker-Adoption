@@ -26,7 +26,7 @@ export default class App extends Component {
   render() {
     const { currentView, currentDogID, data } = this.state;
     return (
-      <div style={styles}>
+      <div style={styles}>      
           {currentView === 'main' ? <MainView moveTo={this.moveTo} dogs={data.dogs} dogID={currentDogID} setDogID={this.setCurrentDogID}/> : null}
           {currentView === 'chat' ? <ChatView moveTo={this.moveTo} data={data} /> : null}
           {currentView === 'login' ? <LoginView moveTo={this.moveTo} /> : null}
