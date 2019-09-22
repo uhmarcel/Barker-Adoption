@@ -1,0 +1,13 @@
+
+{
+    "dogs": [
+        {
+            "imageUrl": "https://images.pexels.com/photos/1345191/pexels-photo-1345191.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+            "videoUrl": null,
+            "name": "Scooby",
+            "age": 6,
+            "breed": "Irish setter",
+            "location": "Miami FL"
+        }
+    ]
+}
