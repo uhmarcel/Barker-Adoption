@@ -11,7 +11,7 @@ export default class App extends Component {
 
   state = {
     data: dataJSON,
-    currentView: 'main',
+    currentView: 'login',
     currentDogID: 0,
     matches: []
   }

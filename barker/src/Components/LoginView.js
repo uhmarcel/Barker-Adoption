@@ -8,13 +8,13 @@ export default class LoginView extends Component {
         const { moveTo } = this.props;
         return(
             
-            <div className='justify-content-center text-center bg-dark h-100' >
-                <img src= {logoPaw} style={{width: '70%'}}/>
-                <Row style={{fontSize: '2rem'}}>
+            <div className='justify-content-center text-center bg-dark h-100 background p-4' >
+                <img src= {logoPaw} className='py-5' style={{width: '60%'}}/>
+                <Row className='pt-5' style={{fontSize: '1rem'}}>
                     <Col xs='12' style={leftIcon}>
-                        <FormGroup>
+                        <FormGroup className='text-center'>
                         <Label for="examplePassword">Email</Label>
-                        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+                        <Input className='text-center'type="email" name="email" id="exampleEmail" placeholder="Enter email" />
                         </FormGroup>
                     </Col>
 
@@ -22,13 +22,15 @@ export default class LoginView extends Component {
                     <Col xs='12' style={leftIcon}>
                         <FormGroup>
                             <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
+                            <Input className='text-center' type="password" name="password" id="examplePassword" placeholder="Enter password" />
                         </FormGroup>
                     </Col>  
                 </Row>
 
 
-                <Button color="secondary">log in</Button>{' '}
+                <Button 
+                    color="secondary"
+                    onClick={() => moveTo('main') }>Sign In</Button>{' '}
             </div>
         );
     }

@@ -28,3 +28,7 @@
 .App-link {
   color: #09d3ac;
 }
+
+.background {
+  background-image: linear-gradient(to bottom right, #DE4586 , #E2773B);
+}
