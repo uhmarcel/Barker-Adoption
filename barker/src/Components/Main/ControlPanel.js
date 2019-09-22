@@ -7,17 +7,20 @@ import { faCat, faPaw } from '@fortawesome/free-solid-svg-icons';
 export default class ControlPanel extends Component {
 
     render() {
-        const { setDogID } = this.props;
+        const { accept, decline } = this.props;
         return(
             <Container className='centered py-4' style={{fontSize: '3rem'}}>
                 <Row className='justify-content-center text-center'>
                         <div className='' style={{...iconStyle, color: '#FF696E'}}>
-                            <FontAwesomeIcon icon={faCat} />
+                            <FontAwesomeIcon 
+                                icon={faCat} 
+                                onClick={decline}
+                            />
                         </div>
                         <div className='' style={{...iconStyle, color: '#4CBE93'}}>
                             <FontAwesomeIcon 
                                 icon={faPaw} 
-                                onClick={() => setDogID()}
+                                onClick={accept}
                             />
                         </div>
                 </Row>

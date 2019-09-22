@@ -10,11 +10,18 @@ export default class MainView extends Component {
 
     swipeNext = () => {
         const { setDogID } = this.props;
-         
+        this.swipeRef.next();
+        setDogID();
+    }
+
+    getDogs = () => {
+        const { dogs } = this.props;
+        const extended = dogs.concat(dogs).concat(dogs).concat(dogs);
+        return extended.concat(extended).concat(extended);
     }
 
     render() {
-        const { moveTo, dogs, dogID, setDogID } = this.props;
+        const { moveTo } = this.props;
         return (
             <div className='p-2'> 
                 <NavBar moveTo={moveTo} />
@@ -23,17 +30,15 @@ export default class MainView extends Component {
                     swipeOptions={{ continuous: false }}
                     ref={r => (this.swipeRef = r)}
                 >
-                    {dogs.map(currentDog => (
+                    {this.getDogs().map(currentDog => (
                         <div>
                             <DogCard dogData={currentDog} />
                         </div>
                     ))}
                 </ReactSwipe>
                 <ControlPanel 
-                    reject={() => this.swipeRef.next()}
-                    accept={() => {
-                        this.swipeRef.next()
-                    }} 
+                    decline={() => this.swipeNext()}
+                    accept={() => this.swipeNext()} 
                     />
             </div>
         );

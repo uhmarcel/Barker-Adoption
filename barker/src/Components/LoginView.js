@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col ,  InputGroup, InputGroupAddon, InputGroupText, Input , Button, Form, FormGroup, Label, FormText} from 'reactstrap';
-import ChatNav from './Chat/ChatNav';
-import Chat from './Chat/Chat';
-import Matches from './Chat/Matches';
 import logoPaw from '../Assets/BarkerPawLogo.png' 
 
 export default class LoginView extends Component {
@@ -12,7 +9,6 @@ export default class LoginView extends Component {
         return(
             
             <div className='justify-content-center text-center bg-dark h-100' >
-                {/* <ChatNav moveTo={moveTo}/> */}
                 <img src= {logoPaw} style={{width: '70%'}}/>
                 <Row style={{fontSize: '2rem'}}>
                     <Col xs='12' style={leftIcon}>

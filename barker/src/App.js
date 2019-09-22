@@ -2,9 +2,8 @@ import React, { Component, Ref} from 'react';
 import MainView from './Components/MainView';
 import ChatView from './Components/ChatView';
 import dataJSON from './Assets/data.json';
-import './App.css';
-import DogNav from './Components/Chat/DogNav';
 import LoginView from './Components/LoginView';
+import './App.css';
 
 
 export default class App extends Component {
