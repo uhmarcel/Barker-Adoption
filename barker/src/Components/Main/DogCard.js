@@ -13,13 +13,13 @@ class DogCard extends Component {
     render() {
         const { imageUrl, name, age, shortBio } = this.state; 
         return (
-            <div>
+            <div className='card'>
                 <div>
                     <img src={imageUrl} />
                 </div>
                 <div>
-                    <span>{name}, {age}</span>  
-                    <span>{shortBio}</span>
+                    <p>{name}, {age}</p>  
+                    <p>{shortBio}</p>
                 </div>
             </div>
         );
@@ -29,13 +29,17 @@ class DogCard extends Component {
 
 export default DogCard;
 
-// const styles = {
-//     header: {
-//         fontSize:
-//     }
-//     height: '100%',
-//     padding: '10px'
-// }
+const styles = {
+    container: {
+        height: '100%',
+        weight: '100%',
+        padding: '20px',
+        border: 'solid 1px black'
+    },
+    displayImage: {
+        height: '80%',
+    }
+}
 
 // import React from 'react';
 // import {
