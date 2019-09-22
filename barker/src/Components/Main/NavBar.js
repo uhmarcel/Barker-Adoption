@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                     </Col>
                     
                     <Col xs='6' style={logoStyle}>
-                        <img src={logo} style={{height: '200px'}}/>
+                        <img src={logo} style={{height: '50px', marginTop: '-15px'}}/>
                     </Col>
                     
                     <Col xs='3' style={rightIcon}>
