@@ -6,12 +6,12 @@ import Matches from './Matches';
 export default class ChatView extends Component {
 
     render() {
+        const { moveTo } = this.props;
         return(
             <div>
-                <ChatNav />
+                <ChatNav moveTo={moveTo} />
                 <Matches />
             </div>
         );
     }
-    
 }
